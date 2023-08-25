@@ -37,7 +37,7 @@
 #subscriptionLowerSection {
   position: relative;
   width: 100%;
-  background-image: url("/public/assets/bg_03.svg");
+  background-image: url("/week1/public/assets/bg_03.svg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
