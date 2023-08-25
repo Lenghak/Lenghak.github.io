@@ -111,15 +111,17 @@
     flex-direction: row;
     text-align: left;
   }
-
-  #getStartedContactGroup .get-started-card:first-child {
-    border-right: 1px solid #738bae25;
-  }
 }
 
 @media screen and (min-width: 64rem) {
   #getStartedContactGroup .get-started-card {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 71rem) {
+  #getStartedContactGroup .get-started-card:first-child {
+    border-right: 1px solid #738bae25;
   }
 }
