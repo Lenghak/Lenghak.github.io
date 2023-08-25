@@ -128,6 +128,10 @@ footer#pageFooter #pageFooterLowerSection > div {
   gap: 1rem;
 }
 
+footer#pageFooter #pageFooterLowerSection > div a {
+  color: var(--muted);
+}
+
 @media screen and (min-width: 20em) {
   #footerSubscribe form#footerSubscribeEmail > div {
     flex-direction: row;
