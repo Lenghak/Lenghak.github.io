@@ -1,0 +1,213 @@
+#subscriptionContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#subscriptionContainer h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  max-width: 30rem;
+}
+
+#subscriptionContainer #subscriptionSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 50rem;
+  background-color: #2563eb10;
+}
+
+#subscriptionContainer #subscriptionSwitch span {
+  padding: 0.5rem 1rem;
+  border-radius: 50rem;
+  cursor: pointer;
+  font-size: small;
+}
+
+#subscriptionContainer #subscriptionSwitch span[data-active="true"] {
+  background-color: white;
+  box-shadow: 0 1px 1rem #00000020;
+}
+
+#subscriptionLowerSection {
+  position: relative;
+  width: 100%;
+  background-image: url("/public/assets/bg_03.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+
+  flex-direction: column;
+  height: 100%;
+  padding: 3rem 1rem;
+  gap: 2rem;
+}
+
+#subscriptionLowerSection #subscriptionCardGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+#subscriptionCardGroup .subscription-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+  gap: 2rem;
+  border-radius: 1rem;
+  height: 100%;
+  width: 100%;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 1px 1rem #00000010;
+  background-color: white;
+}
+
+#subscriptionCardGroup .subscription-card h3 {
+  font-size: 1.5rem;
+}
+
+#subscriptionCardGroup .subscription-card .subscription-card-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+#subscriptionCardGroup .subscription-card .subscription-card-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #2563eb10;
+  padding: 0.5rem 3rem;
+  border-radius: 1rem;
+}
+
+#subscriptionCardGroup .subscription-card .subscription-card-desc > strong {
+  font-size: 2.5rem;
+  color: var(--accent);
+}
+
+#subscriptionCardGroup
+  .subscription-card
+  .subscription-card-desc
+  > strong
+  > sup {
+  font-size: 1.25rem;
+}
+
+#subscriptionCardGroup .subscription-card .subscription-card-desc > div {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#subscriptionCardGroup .subscription-card .subscription-card-desc > div > i {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+#subscriptionCardGroup .subscription-card .subscription-card-cta {
+  gap: 1rem;
+  border-radius: 50rem;
+  border: 1px solid var(--muted);
+  font-weight: 400;
+}
+
+#subscriptionCardGroup #subscriptionBusinessCard .subscription-card-cta {
+  background-color: var(--accent);
+  color: white;
+  border: 0;
+}
+
+#subscriptionCardGroup .subscription-card .subscription-card-offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#subscriptionLowerSection #subscriptionHelp {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  align-self: center;
+}
+
+#subscriptionLowerSection #subscriptionHelp a {
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 40em) {
+}
+
+@media screen and (min-width: 48em) {
+  #subscriptionLowerSection #subscriptionCardGroup {
+    width: fit-content;
+  }
+}
+
+@media screen and (min-width: 64em) {
+}
+
+@media screen and (min-width: 80em) {
+  #subscriptionContainer #subscriptionSwitch {
+    margin-bottom: 12rem;
+  }
+
+  #subscriptionLowerSection {
+    height: 35rem;
+    padding: 5rem 15rem;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  #subscriptionLowerSection #subscriptionCardGroup {
+    position: absolute;
+    top: -30%;
+    left: 0%;
+    padding: inherit;
+    gap: 5rem;
+    flex-direction: row;
+    padding: 0 12.5rem;
+  }
+
+  #subscriptionLowerSection #subscriptionHelp {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 96em) {
+  #subscriptionContainer #subscriptionSwitch {
+    margin-bottom: 7.5rem;
+  }
+
+  #subscriptionLowerSection {
+    height: 37.5rem;
+  }
+
+  #subscriptionLowerSection #subscriptionCardGroup {
+    padding: inherit;
+  }
+}

@@ -1,0 +1,113 @@
+/* --- Navigation Section ---*/
+#navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 0 -0.125rem 0.5rem #00000025;
+}
+
+#navContainer #navMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  background: white;
+
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+#navContainer #navMenu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+#navContainer nav#navNavs {
+  display: none;
+}
+
+#navContainer ul li {
+  list-style-type: none;
+}
+
+#navContainer ul li a {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--foreground);
+}
+
+#navContainer nav#navNavs ul li a[data-active="true"] {
+  color: var(--primary);
+}
+
+#navContainer nav#navNavs ul li a:hover {
+  color: var(--primary);
+}
+
+#navContainer div#navCallToActions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#navContainer div#navCallToActions > #searchButton {
+  border-radius: 50rem;
+}
+
+#navContainer div#navCallToActions > #requestDemoButton {
+  display: none;
+}
+
+#navContainer div#navCallToActions #navsMenuButton {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+@media screen and (min-width: 40em) {
+}
+
+@media screen and (min-width: 48em) {
+}
+
+@media screen and (min-width: 64em) {
+  #navContainer nav#navNavs {
+    display: flex;
+  }
+
+  #navContainer nav#navNavs ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+
+  #navContainer div#navCallToActions {
+    gap: 2rem;
+  }
+
+  #navContainer div#navCallToActions > #requestDemoButton {
+    display: flex;
+  }
+
+  #navContainer div#navCallToActions #navsMenuButton {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 80em) {
+}
+
+@media screen and (min-width: 96em) {
+}

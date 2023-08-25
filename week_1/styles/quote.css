@@ -1,0 +1,93 @@
+#quoteContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0rem;
+}
+
+#quoteContainer .content-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: none;
+  width: 100%;
+}
+
+#quoteContainer #slideChangerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#quoteContainer #slideChangerButton .switch {
+  min-width: 0.5rem;
+  min-height: 0.5rem;
+  background-color: #00000025;
+  border-radius: 50rem;
+}
+
+#quoteContainer #slideChangerButton .switch[data-active="true"] {
+  background-color: var(--accent);
+}
+
+#quoteCardGroup {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-top: 3rem;
+  justify-content: start;
+  width: 100%;
+}
+
+#quoteCardGroup .quote-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  min-width: 100%;
+  padding: 3rem;
+  border: 1px solid #00000010;
+  border-radius: var(--radius);
+}
+
+#quoteCardGroup::-webkit-scrollbar {
+  display: none;
+}
+
+#quoteCardGroup .quote-card-container .quote-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#quoteCardGroup .quote-card-container .quote-card-header > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#quoteCardGroup .quote-card-container .quote-card-header > div .star-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: gold;
+  font-size: small;
+}
+
+#quoteCardGroup .quote-card-container p {
+  font-size: large;
+  line-height: 2rem;
+}
+
+#quoteCardGroup .quote-card-container footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 40em) {
+  #quoteCardGroup .quote-card-container {
+    min-width: 35rem;
+  }
+}

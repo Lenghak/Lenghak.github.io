@@ -1,0 +1,161 @@
+#workProcessContainer {
+  background-color: #2563eb10;
+  padding-top: 10rem;
+  display: flex;
+  gap: 10rem;
+  flex-direction: column;
+}
+
+#workProcessContainer #workProcessSection1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 0 1rem;
+}
+
+#workProcessSection1 #workContentContainer {
+  align-items: center;
+}
+
+#workProcessImageContainer {
+  position: relative;
+}
+
+#workProcessImageContainer img#workProcessBox1,
+img#workProcessBox2,
+img#workProcessBox3,
+img#workProcessBox4,
+img#workProcessColumn1,
+img#workProcessColumn2 {
+  position: absolute;
+}
+
+#workProcessImageContainer img#workProcessBox1 {
+  top: 30%;
+  left: 25%;
+  width: 3.5%;
+}
+
+#workProcessImageContainer img#workProcessBox2 {
+  right: 22%;
+  bottom: 27%;
+  width: 3.5%;
+}
+
+#workProcessImageContainer img#workProcessBox3 {
+  left: 25%;
+  bottom: 20%;
+  width: 3.5%;
+}
+
+#workProcessImageContainer img#workProcessBox4 {
+  right: 20%;
+  top: 0%;
+  width: 10%;
+}
+
+#workProcessImageContainer img#workProcessColumn1 {
+  top: 17%;
+  left: 0%;
+  width: 18%;
+}
+
+#workProcessImageContainer img#workProcessColumn2 {
+  top: 17%;
+  right: 0%;
+  width: 18%;
+}
+
+#workProcessSection2 {
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 5rem ;
+}
+
+#workProcessSection2 .work-process-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+#workProcessSection2 .work-process-card .work-process-number-bullet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+#workProcessSection2 .work-process-card .work-process-number-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#workProcessSection2 .work-process-card .work-process-number-content span {
+  font-size: small;
+}
+
+@media screen and (min-width: 40em) {
+  #workProcessSection2 .work-process-card {
+    width: 20rem;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  #workProcessContainer #workProcessSection1 {
+    flex-direction: row;
+    text-align: left;
+    justify-content: start;
+    gap: 5rem;
+    padding: 0 5rem;
+  }
+
+  #workProcessSection1 #workContentContainer {
+    align-items: start;
+  }
+
+  #workProcessSection2 {
+    padding: 0rem 3rem;
+  }
+
+  #workProcessSection2 .work-process-card {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 64em) {
+}
+
+@media screen and (min-width: 80em) {
+  #workProcessContainer #workProcessSection1 {
+    padding: 0rem 10rem 0rem 15rem;
+  }
+
+  #workProcessContainer #workProcessSection2 {
+    padding: 0rem 15rem;
+  }
+}
+
+@media screen and (min-width: 96em) {
+}

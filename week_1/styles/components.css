@@ -1,0 +1,56 @@
+/* buttons */
+.btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: var(--radius);
+  border: 0;
+  background-color: transparent;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon {
+  padding: 0.75rem;
+  background-color: transparent;
+  border: 0;
+}
+
+.btn-icon:hover {
+  background-color: #738bae20;
+  color: var(--muted);
+}
+
+.btn-outline {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border: 0;
+}
+
+/* badge */
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  background-color: var(--muted);
+  border-radius: 5rem;
+  border: 0;
+  cursor: pointer;
+  color: var(--muted-foreground);
+  font-size: small;
+  text-transform: uppercase;
+  padding: 0.25rem 1rem;
+}

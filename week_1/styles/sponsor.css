@@ -1,0 +1,36 @@
+#sponsorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+#sponsorContainer .content-section {
+  max-width: 60rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#sponsorContainer #sponsorLogoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 3rem 0;
+}
+
+@media screen and (min-width: 40em) {
+  #sponsorContainer {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  #sponsorContainer {
+    padding: 5rem 15rem;
+  }
+}

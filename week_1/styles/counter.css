@@ -1,0 +1,78 @@
+#counterContainer {
+  position: relative;
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: center;
+  justify-content: space-evenly;
+  background-color: white;
+  width: fit-content;
+
+  padding: 3rem 5rem;
+  gap: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 1rem rgba(0, 0, 0, 0.05);
+}
+
+#counterContainer .counter-number {
+  width: 100%;
+  max-width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+#counterContainer .counter-number .dot {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  min-width: 0.5rem;
+  min-height: 0.5rem;
+  border-radius: 50rem;
+  background-color: var(--accent);
+}
+
+#counterContainer .counter-number strong {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+#counterUpperBackground,
+#counterLowerBackground {
+  min-width: 100vw;
+  min-height: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+#counterUpperBackground {
+  top: 0;
+}
+
+#counterLowerBackground {
+  bottom: 0;
+  background-color: #2563eb10;
+}
+
+@media screen and (min-width: 40em) {
+  #counterContainer {
+    gap: 5rem;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  #counterContainer {
+    gap: 8rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  #counterContainer {
+    gap: 10rem;
+  }
+}
