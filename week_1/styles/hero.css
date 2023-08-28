@@ -241,8 +241,7 @@ img.uploading-phone {
   #heroContainer {
     padding-left: 15rem;
     padding-right: 2.5rem;
-    height: 90%;
-    margin-top: 0;
+    margin-top: 0.5rem;
   }
 
   #heroImageContainer .hero-card {

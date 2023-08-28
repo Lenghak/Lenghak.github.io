@@ -116,8 +116,13 @@
 }
 
 @media screen and (min-width: 80em) {
+  #clientContainer {
+    justify-content: center;
+  }
+
   #clientContainer #clientSection1 {
     padding-right: 15rem;
+    justify-content: center;
   }
 }
 
