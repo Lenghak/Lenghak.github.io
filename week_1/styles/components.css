@@ -15,6 +15,7 @@
   padding: 0.75rem;
   background-color: transparent;
   border: 0;
+  border-radius: 50rem;
 }
 
 .btn-icon:hover {
@@ -36,7 +37,13 @@
 .btn-primary {
   background-color: var(--primary);
   color: var(--primary-foreground);
-  border: 0;
+  border: 0.125rem solid transparent;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--primary);
+  border: 0.125rem solid var(--primary);
 }
 
 /* badge */

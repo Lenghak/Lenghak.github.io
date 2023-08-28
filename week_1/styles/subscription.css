@@ -167,6 +167,10 @@
   #subscriptionLowerSection #subscriptionCardGroup {
     width: fit-content;
   }
+
+  #subscriptionCardGroup .subscription-card .subscription-card-desc {
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 64em) {

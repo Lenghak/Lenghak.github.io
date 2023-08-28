@@ -111,4 +111,8 @@
 }
 
 @media screen and (min-width: 96em) {
+  #navContainer {
+    justify-content: center;
+    gap: 20rem;
+  }
 }

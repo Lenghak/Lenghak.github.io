@@ -96,8 +96,8 @@ form#footerSubscribeEmail > div > input {
 }
 
 form#footerSubscribeEmail > div > button {
-  background-color: var(--primary);
-  color: var(--primary-foreground);
+  /* background-color: var(--primary); */
+  /* color: var(--primary-foreground); */
   padding: 1rem 1.25rem;
   /* position: absolute; */
   right: 0.25rem;
@@ -173,4 +173,14 @@ footer#pageFooter #pageFooterLowerSection > div a {
 }
 
 @media screen and (min-width: 96em) {
+  #pageFooter {
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #pageFooter #pageFooterUpperSection {
+    justify-content: center;
+    gap: 5rem;
+  }
 }

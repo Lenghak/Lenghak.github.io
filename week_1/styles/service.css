@@ -154,6 +154,10 @@
   #serviceContainer {
     padding-left: 15rem;
   }
+
+  #serviceCardGroup {
+    width: fit-content;
+  }
 }
 
 @media screen and (min-width: 96em) {
