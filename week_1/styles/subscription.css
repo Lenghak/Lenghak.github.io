@@ -190,7 +190,7 @@
 
   #subscriptionLowerSection {
     height: 35rem;
-    padding: 5rem 15rem;
+    padding: 5rem 12.5rem;
     flex-direction: row;
     gap: 0;
   }

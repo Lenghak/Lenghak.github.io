@@ -168,7 +168,7 @@ footer#pageFooter #pageFooterLowerSection > div a {
 
 @media screen and (min-width: 80em) {
   #pageFooter {
-    padding: 5rem 15rem 0rem 15rem;
+    padding: 5rem 12.5rem 0rem 12.5rem;
   }
 }
 
