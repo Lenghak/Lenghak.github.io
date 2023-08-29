@@ -75,6 +75,7 @@
 #navContainer div#navCallToActions #navsMenuButton {
   background-color: var(--primary);
   color: var(--primary-foreground);
+  border-radius: var(--radius);
 }
 
 @media screen and (min-width: 40em) {
@@ -92,7 +93,6 @@
     display: flex;
     gap: 1rem;
   }
-
 
   #navContainer div#navCallToActions {
     gap: 2rem;
