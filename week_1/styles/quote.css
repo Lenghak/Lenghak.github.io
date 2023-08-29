@@ -57,18 +57,23 @@
   display: none;
 }
 
-#quoteCardGroup .quote-card-container .quote-card-header {
+.quote-card-container .quote-card-header {
   display: flex;
   justify-content: space-between;
 }
 
-#quoteCardGroup .quote-card-container .quote-card-header > div {
+.quote-card-container .quote-card-header > div {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-#quoteCardGroup .quote-card-container .quote-card-header > div .star-container {
+.quote-card-container .quote-card-header > div > img {
+  max-width: 10rem;
+  max-height: 2.125rem;
+}
+
+.quote-card-container .quote-card-header > div .star-container {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -76,12 +81,12 @@
   font-size: small;
 }
 
-#quoteCardGroup .quote-card-container p {
+.quote-card-container p {
   font-size: large;
   line-height: 2rem;
 }
 
-#quoteCardGroup .quote-card-container footer {
+.quote-card-container footer {
   display: flex;
   align-items: center;
   justify-content: space-between;

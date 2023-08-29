@@ -41,7 +41,7 @@
   border-radius: 1rem;
   min-width: 15rem;
   height: 17rem;
-  background-image: linear-gradient(to bottom, #ffffff00, #f1f5f3);
+  /* background-image: linear-gradient(to bottom, #ffffff00, #f1f5f3); */
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0.75rem;
@@ -99,5 +99,4 @@
 }
 
 @media screen and (min-width: 96em) {
-  
 }

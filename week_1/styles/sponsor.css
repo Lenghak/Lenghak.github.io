@@ -24,6 +24,20 @@
   padding: 3rem 0;
 }
 
+#sponsorContainer #sponsorLogoContainer img {
+  max-height: 3rem;
+  max-width: 13rem;
+}
+
+#sponsorContainer #sponsorLogoContainer img:hover {
+  transform: translateY(-0.5rem);
+}
+
+#sponsorContainer #sponsorLogoContainer img:nth-child(2) {
+  max-height: 4rem;
+  max-width: 4rem;
+}
+
 @media screen and (min-width: 40em) {
   #sponsorContainer {
     padding: 3rem;
